@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a, b, gcd;
+
+    printf("Enter a number:");
+    scanf("%d",&a);
+
+    printf("Enter 2nd number:");
+    scanf("%d",&b);
+
+    while (b!=0)
+    {
+        gcd=b;
+        b=a%b;
+        a=gcd;
+
+    }
+    printf("GCD of the given numbers is %d\n", a);
+    return 0;
+}
