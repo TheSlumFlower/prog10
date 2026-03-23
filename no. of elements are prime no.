@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    int a[50],i, n, j, np=0;
+    printf("Enter number of elements:");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        printf("Enter a[%d]",i);
+        scanf("%d",&a[i]);
+        for(int j=2;j<=a[i]-1;j++){
+            if(a[i]%j==0){
+                np++;
+                break;
+            }
+        }
+        
+    }
+    printf("%d elements are prime", n-np);
+    return 0;
+
+}
