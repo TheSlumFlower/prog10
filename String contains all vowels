@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main(){
+    int len=0, i, counta, counte, counti, counto, countu;
+    char a[50];
+
+    printf("Enter a string:");
+    fgets(a,sizeof(a),stdin);
+    for(i=0; a[i]!='\0'; i++){
+        if(a[i]== 'a' || a[i]=='A'){
+            counta++ ;
+        }
+        else if(a[i]== 'a' || a[i]=='A'){
+            counta++ ;
+        }
+        else if(a[i]== 'e' || a[i]=='E'){
+            counte++ ;
+        }
+        else if(a[i]== 'i' || a[i]=='I'){
+            counti++ ;
+        }
+        else if(a[i]== 'o' || a[i]=='O'){
+            counto++ ;
+        }
+        else if(a[i]== 'u' || a[i]=='U'){
+            countu++ ;
+        }
+    }
+    if (counta>=1 && counte>=1 && counto>=1 && counti>=1 &&countu>=1){
+        printf("String contains all vowels");
+        
+    }
+    else{
+        printf("No vowels found\n");
+    }
+    return 0;
+}
